@@ -23,6 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('mouseout', hideOut);
     
     
+    var buttonsMore = document.querySelectorAll('.read-more');
+    console.log(buttonsMore)
+
+  function showHide() {
+
+    var textArea = this.previousElementSibling;
+   
+    if (textArea.style.display === 'none' || textArea.style.display === '') {
+      textArea.style.display = 'block';
+      this.innerHTML = 'MNIEJ <span class="glyphicon glyphicon-chevron-up"></span>';
+    } else {
+      textArea.style.display = 'none';
+      this.innerHTML = 'WIĘCEJ <span class="glyphicon glyphicon-chevron-down"></span>';
+    }
+  }
+
+  for (var i = 0; i < buttonsMore.length; i++) {
+    buttonsMore[i].addEventListener('click', showHide);
+  }
+    
     
     
     
