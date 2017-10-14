@@ -87,6 +87,7 @@ nav {
   text-shadow: .2rem .2rem .2rem #424343;
   font-weight: 600;
   font-size: 6rem;
+    margin-bottom: 50px;
 }
 
 .tasks-btn {
@@ -100,6 +101,7 @@ nav {
   margin-top: 3rem;
   border: none;
   box-shadow: .2rem .2rem .2rem #7f7f7f;
+    margin-bottom: 20px
 }
 
 .tasks-btn:hover,
@@ -180,6 +182,7 @@ nav {
 .plan-description {
   height: 70rem;
   margin-top: 4rem;
+    font-weight: 900;
 }
 
 .plan-description h3 {
